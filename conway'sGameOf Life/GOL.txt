@@ -1,0 +1,61 @@
+Conway's Game of life :
+
+Rule of the game :
+
+if the current cell is live cell :
+- count the #live neighbors :
+i) if count<2, then in the next gen the current cell will be dead .
+ii) if count==2 or count==3,then in the next gen the current cell will be live .
+iii) if count>3, then in the next gen the current cell will be dead 
+
+
+if the current cell is dead cell :
+- count the #live neighbors :
+i) if count==3, then in the next gen the current cell will be live;  
+
+
+
+i) current -> type ;
+ii) dead cell : live neighbor count ;
+iii) 
+
+input :
+rows,cols = 5
+no_generations = 3
+
+
+function Conways(n,no_generations)
+         G_prev = set the initial state ;
+         
+         for gen=1:no_generations
+             G_next = declare a matrix for the next state ;
+             
+             i) traverse the whole matrix(G_prev) cell by cell;
+             ii) count the # live cells ;
+             iii) decide whether the current cell will be dead/live
+                  in the next generation and update the G_next                        accordingly;
+             iv) G_prev = G_next ; 
+ 
+         end
+
+end
+
+
+neighbor count :
+
+i) edge cell : 
+
+0< index value of neighbor <= rows/cols 
+
+
+current cell :
+
+row index = 1
+col index = 2
+
+find out the eight neighbor index of the current cell :
+
+row    col   
+i-1    j-1    (0,1)
+i-1    j
+i-1    j+1 
