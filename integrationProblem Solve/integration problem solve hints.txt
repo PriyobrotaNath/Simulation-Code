@@ -1,0 +1,41 @@
+Find the integration value of a function using Monte Carlo Simulation Method. 
+
+Step - 1 :
+Initial the following variables :
+hits = 0 , and trial_no = take input from user;
+
+Step - 2 :
+Generate a random number (Xr,Yr) where Xr=[a,b] and Yr=[0,f(a)] if f(a) > f(b)
+else Yr=[0,f(b)] if f(a) < f(b).
+
+Step-3 :
+Check if the random number(Xr,Yr) falls within the given region or not.
+if the random point falls within the given region, then hit++; else do nothing ;
+
+step-4 : repeat step 2 and 3 for trail_no times ;
+
+
+step-5 : find the I value ;
+
+I / R = (hits) / (trail_no)
+
+I = [hits / trail_no] * R
+  
+
+I  = [hits/ trail_no] * (b-a) * f(b) 
+
+
+Task - a :
+
+I = ?
+trail_no : 10 , I = 2.3 ;
+trial_no : 100 , I = 5.6 ;
+trail_no : 1000 , I = 6.123 ;
+
+
+Task - b :
+
+Error graph :
+ 
+trail_no : 10 , error = abs(6.33 - 2.3 ) = 0.4  ;
+trail_no : 100 , error = abs(6.33 - 5.6 ) = 0.1 ;
